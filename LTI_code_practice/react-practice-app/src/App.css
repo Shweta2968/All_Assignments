@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background-color: #f2f4f8;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.project-form {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-form input,
+.project-form select,
+.controls input,
+.controls select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #0078d4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  color: #0078d4;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.project-list {
+  display: grid;
+  gap: 15px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #0078d4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin: 0 0 8px 0;
+}
+
+.project-card p {
+  margin: 0 0 10px 0;
+  color: #555;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.completed {
+  background-color: green;
+}
+
+.in-progress {
+  background-color: orange;
+}
+
+.planned {
+  background-color: crimson;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-actions select {
+  padding: 8px;
+}
+
+.delete-btn {
+  background-color: #d83b01;
+}
+
+.delete-btn:hover {
+  background-color: #a4262c;
+}
+
+@media screen and (max-width: 768px) {
+  .project-form,
+  .controls,
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
